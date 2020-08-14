@@ -45,5 +45,3 @@ def exportar_df(df, *args, **kwargs):
                    
         except FileNotFoundError:
             df.to_csv('resultados/resultado_csv_{}.csv' .format(str(nc)), encoding='UTF-8')
-
-    return ne, nc
